@@ -86,6 +86,27 @@ public class App extends Application {
 
         root.setCenter(grid);
         
+        
+        
+        
+        clearBtn.setOnAction(event -> {
+            daysField.setText("");
+            airfareField.setText("");
+            carRentalField.setText("");
+            milesField.setText("");
+            parkingField.setText("");
+            taxiField.setText("");
+            conferenceField.setText("");
+            lodgingField.setText("");
+
+            totalLabel.setText("Total expenses:");
+            allowableLabel.setText("Total allowable expenses:");
+            excessLabel.setText("Excess to be paid:");
+            savedLabel.setText("Amount saved:");
+
+            messageLabel.setText("");
+        });
+                
         Scene scene = new Scene(root, 500, 600);
         stage.setTitle("Business Travel Expense Calculator");
         stage.setScene(scene);

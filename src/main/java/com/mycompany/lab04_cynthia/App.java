@@ -21,7 +21,7 @@ public class App extends Application {
         grid.setVgap(10);
         
         Scene scene = new Scene(root, 500, 600);
-        stage.setTitle("Business Travel Expense Calculator");
+        stage.setTitle("Business Travel Expense Calculator    ");
         stage.setScene(scene);
         stage.show();
     }

@@ -86,8 +86,35 @@ public class App extends Application {
 
         root.setCenter(grid);
         
-        
-        
+        calculateBtn.setOnAction(event -> {
+            int days = Integer.parseInt(daysField.getText());
+            double airfare = 0;
+            double carRental = 0;
+            double miles = 0;
+            double parking = 0;
+            double taxi = 0;
+            double conference = 0;
+            double lodging = Double.parseDouble(lodgingField.getText());
+
+            if (airfareField.getText().length() > 0)
+                airfare = Double.parseDouble(airfareField.getText());
+
+            if (carRentalField.getText().length() > 0)
+                carRental = Double.parseDouble(carRentalField.getText());
+            
+            if (milesField.getText().length() > 0)
+                 miles = Double.parseDouble(milesField.getText());
+
+            if (parkingField.getText().length() > 0)
+                parking = Double.parseDouble(parkingField.getText());
+
+            if (taxiField.getText().length() > 0)
+                taxi = Double.parseDouble(taxiField.getText());
+
+            if (conferenceField.getText().length() > 0)
+                conference = Double.parseDouble(conferenceField.getText());
+
+        });
         
         clearBtn.setOnAction(event -> {
             daysField.setText("");

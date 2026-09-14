@@ -114,6 +114,20 @@ public class App extends Application {
             if (conferenceField.getText().length() > 0)
                 conference = Double.parseDouble(conferenceField.getText());
 
+            double meals = days * 37;
+            double mileage = miles * 0.27;
+
+            double parkingAllowed = parking;
+            if (parking > days * 10)
+                parkingAllowed = days * 10;
+
+            double taxiAllowed = taxi;
+            if (taxi > days * 20)
+                taxiAllowed = days * 20;
+
+            double lodgingAllowed = lodging;
+            if (lodging > 95)
+                lodgingAllowed = 95;
         });
         
         clearBtn.setOnAction(event -> {

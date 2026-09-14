@@ -15,6 +15,7 @@ import javafx.stage.Stage;
  * JavaFX App
  */
 public class App extends Application {
+    
     @Override
     public void start(Stage stage) {
         BorderPane root = new BorderPane();
@@ -163,8 +164,9 @@ public class App extends Application {
 
             messageLabel.setText("");
         });
-                
+        
         Scene scene = new Scene(root, 500, 600);
+        scene.getStylesheets().add("style.css");
         stage.setTitle("Business Travel Expense Calculator");
         stage.setScene(scene);
         stage.show();

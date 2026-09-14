@@ -3,6 +3,7 @@ package com.mycompany.lab04_cynthia;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
@@ -39,6 +40,16 @@ public class App extends Application {
         TextField taxiField = new TextField();
         TextField conferenceField = new TextField();
         TextField lodgingField = new TextField();
+        
+        Button calculateBtn = new Button("Calculate");
+        Button clearBtn = new Button("Clear");
+
+        Label totalLabel = new Label("Total expenses:");
+        Label allowableLabel = new Label("Total allowable expenses:");
+        Label excessLabel = new Label("Excess to be paid:");
+        Label savedLabel = new Label("Amount saved:");
+
+        Label messageLabel = new Label();
         
         Scene scene = new Scene(root, 500, 600);
         stage.setTitle("Business Travel Expense Calculator");

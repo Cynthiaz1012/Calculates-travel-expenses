@@ -139,7 +139,11 @@ public class App extends Application {
 
             if (saved < 0)
                 saved = 0;
-
+            
+            totalLabel.setText(String.format("Total expenses: $%.2f", totalExpenses));
+            allowableLabel.setText(String.format("Total allowable expenses: $%.2f", totalAllowable));
+            excessLabel.setText(String.format("Excess to be paid: $%.2f", excess));
+            savedLabel.setText(String.format("Amount saved: $%.2f", saved));
         });
         
         clearBtn.setOnAction(event -> {

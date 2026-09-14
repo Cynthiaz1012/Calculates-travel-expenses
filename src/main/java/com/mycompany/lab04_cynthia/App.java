@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
@@ -29,6 +30,15 @@ public class App extends Application {
         Label taxiLabel = new Label("Taxi charges:");
         Label conferenceLabel = new Label("Conference fees:");
         Label lodgingLabel = new Label("Lodging per night:");
+        
+        TextField daysField = new TextField();
+        TextField airfareField = new TextField();
+        TextField carRentalField = new TextField();
+        TextField milesField = new TextField();
+        TextField parkingField = new TextField();
+        TextField taxiField = new TextField();
+        TextField conferenceField = new TextField();
+        TextField lodgingField = new TextField();
         
         Scene scene = new Scene(root, 500, 600);
         stage.setTitle("Business Travel Expense Calculator");

@@ -3,6 +3,7 @@ package com.mycompany.lab04_cynthia;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
@@ -19,6 +20,15 @@ public class App extends Application {
         grid.setPadding(new Insets(20));
         grid.setHgap(10);
         grid.setVgap(10);
+        
+        Label daysLabel = new Label("Number of days:");
+        Label airfareLabel = new Label("Airfare:");
+        Label carRentalLabel = new Label("Car rental:");
+        Label milesLabel = new Label("Miles driven:");
+        Label parkingLabel = new Label("Parking fees:");
+        Label taxiLabel = new Label("Taxi charges:");
+        Label conferenceLabel = new Label("Conference fees:");
+        Label lodgingLabel = new Label("Lodging per night:");
         
         Scene scene = new Scene(root, 500, 600);
         stage.setTitle("Business Travel Expense Calculator");

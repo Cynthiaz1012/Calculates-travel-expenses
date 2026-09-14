@@ -6,4 +6,28 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     Created on : Sep 14, 2026, 11:18:33 AM
     Author     : 2557705
 */
+.root {
+    -fx-background-color: CFFFFD;
+}
 
+.label {
+    -fx-font-size: 14px;
+}
+
+.text-field {
+    -fx-pref-width: 180px;
+}
+
+.button {
+    -fx-font-size: 14px;
+    -fx-background-color: #4A90E2;
+    -fx-text-fill: white;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 5;
+}
+
+.title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}

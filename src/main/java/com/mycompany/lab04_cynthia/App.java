@@ -51,6 +51,41 @@ public class App extends Application {
 
         Label messageLabel = new Label();
         
+        grid.add(daysLabel, 0, 1);
+        grid.add(daysField, 1, 1);
+
+        grid.add(airfareLabel, 0, 2);
+        grid.add(airfareField, 1, 2);
+
+        grid.add(carRentalLabel, 0, 3);
+        grid.add(carRentalField, 1, 3);
+
+        grid.add(milesLabel, 0, 4);
+        grid.add(milesField, 1, 4);
+
+        grid.add(parkingLabel, 0, 5);
+        grid.add(parkingField, 1, 5);
+
+        grid.add(taxiLabel, 0, 6);
+        grid.add(taxiField, 1, 6);
+
+        grid.add(conferenceLabel, 0, 7);
+        grid.add(conferenceField, 1, 7);
+
+        grid.add(lodgingLabel, 0, 8);
+        grid.add(lodgingField, 1, 8);
+
+        grid.add(calculateBtn, 0, 9);
+        grid.add(clearBtn, 1, 9);
+
+        grid.add(totalLabel, 0, 11);
+        grid.add(allowableLabel, 0, 12);
+        grid.add(excessLabel, 0, 13);
+        grid.add(savedLabel, 0, 14);
+        grid.add(messageLabel, 0, 15);
+
+        root.setCenter(grid);
+        
         Scene scene = new Scene(root, 500, 600);
         stage.setTitle("Business Travel Expense Calculator");
         stage.setScene(scene);

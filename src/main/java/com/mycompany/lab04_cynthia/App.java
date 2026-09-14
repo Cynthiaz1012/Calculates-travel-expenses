@@ -128,6 +128,18 @@ public class App extends Application {
             double lodgingAllowed = lodging;
             if (lodging > 95)
                 lodgingAllowed = 95;
+            
+            double totalExpenses = meals + airfare + carRental + mileage + parking + taxi + conference + lodging * days;
+            double totalAllowable = meals + airfare + carRental + mileage + parkingAllowed + taxiAllowed + conference + lodgingAllowed * days;
+            double excess = totalExpenses - totalAllowable;
+            double saved = totalAllowable - totalExpenses;
+
+            if (excess < 0)
+                excess = 0;
+
+            if (saved < 0)
+                saved = 0;
+
         });
         
         clearBtn.setOnAction(event -> {
